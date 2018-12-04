@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>论坛</title>
+    <link rel="stylesheet" href="/node_modules/_bootstrap@3.3.7@bootstrap/dist/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="/public/lib/bootstrap/dist/css/bootstrap.css"> -->
+    {{ block 'head' }}{{ /block }}
+</head>
+
+<body>
+    {{ include './header.html' }}
+    
+    {{ block 'content' }}
+        <h1>默认内容</h1>
+    {{ /block }}
+
+    {{ include './footer.html' }}
+
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/_bootstrap@3.3.7@bootstrap/dist/js/bootstrap.js"></script>
+    {{ block 'script' }}{{ /block }}
+</body>
+
+</html>
